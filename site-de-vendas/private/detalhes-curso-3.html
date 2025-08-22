@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Curso: Marketing Digital</title>
+    <link rel="stylesheet" href="estilo/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Detalhes do Curso: Marketing Digital</h1>
+    </header>
+
+    <main class="detalhes">
+        <section class="informacoes">
+            <h2>Sobre o Curso</h2>
+            <p><strong>Descrição:</strong> Descubra as estratégias e ferramentas para promover negócios online. O curso cobre SEO, mídias sociais, e-mail marketing e análise de métricas para maximizar seu alcance.</p>
+            <p><strong>Carga Horária:</strong> 45 horas</p>
+            <p><strong>Instrutor:</strong> Camila Fernandes</p>
+            <p><strong>Nível:</strong> Iniciante</p>
+            <p><strong>Preço por Vaga:</strong> R$ 380,00</p>
+            <p><strong>Vagas Disponíveis:</strong> <span id="vagas-disponiveis">15</span></p>
+        </section>
+
+        <section class="vagas">
+            <h2>Selecione a quantidade de vagas</h2>
+            <label for="quantidade-vagas">Quantidade:</label>
+            <input type="number" id="quantidade-vagas" value="1" min="1" max="15">
+            
+            <h3>Valor Total: <span id="valor-total">R$ 380,00</span></h3>
+            
+            <a href="index.html">Voltar</a>
+            <button id="comprar-button">Comprar Vagas</button>
+        </section>
+    </main>
+
+    <script src="detalhes-curso.js"></script>
+</body>
+</html>

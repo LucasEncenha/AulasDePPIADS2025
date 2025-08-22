@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.detalhes {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes, .vagas {
+    margin-bottom: 30px;
+}
+
+.informacoes h2, .vagas h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.vagas label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.vagas input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+.vagas h3 {
+    margin-top: 20px;
+    color: #0056b3;
+}
+
+#comprar-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#comprar-button:hover {
+    background-color: #218838;
+}

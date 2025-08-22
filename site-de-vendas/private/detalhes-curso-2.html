@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Curso: Design Gráfico</title>
+    <link rel="stylesheet" href="estilo/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Detalhes do Curso: Design Gráfico</h1>
+    </header>
+
+    <div class="detalhes">
+        <section class="informacoes">
+            <h2>Sobre o Curso</h2>
+            <p><strong>Descrição:</strong> Aprenda a criar projetos visuais impressionantes. Este curso aborda desde os princípios de design até o uso de softwares como Photoshop e Illustrator, essenciais para a área.</p>
+            <p><strong>Carga Horária:</strong> 60 horas</p>
+            <p><strong>Instrutor:</strong> Bruno Martins</p>
+            <p><strong>Nível:</strong> Intermediário</p>
+            <p><strong>Preço por Vaga:</strong> R$ 450,00</p>
+            <p><strong>Vagas Disponíveis:</strong> <span id="vagas-disponiveis">12</span></p>
+        </section>
+
+        <section class="vagas">
+            <h2>Selecione a quantidade de vagas</h2>
+            <label for="quantidade-vagas">Quantidade:</label>
+            <input type="number" id="quantidade-vagas" value="1" min="1" max="12">
+            
+            <h3>Valor Total: <span id="valor-total">R$ 450,00</span></h3>
+            
+            <a href="index.html">Voltar</a>
+            <button id="comprar-button">Comprar Vagas</button>
+        </section>
+    </div>
+
+    <script src="detalhes-curso.js"></script>
+</body>
+</html>

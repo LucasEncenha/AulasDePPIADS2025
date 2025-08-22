@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Disponíveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container-cursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card-curso {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-curso h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .card-curso p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .card-curso .preco {
+            font-weight: bold;
+            color: #007BFF;
+            font-size: 1.2em;
+        }
+
+        .botao-detalhes {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .botao-detalhes:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cursos Disponíveis</h1>
+
+    <div class="container-cursos">
+        <div class="card-curso">
+            <h2>Desenvolvimento Web</h2>
+            <p><strong>Início:</strong> 15/09/2025</p>
+            <p><strong>Duração:</strong> 80 horas</p>
+            <p>R$ 500,00</p>
+            <a href="detalhes-curso-1.html" class="botao-detalhes">Ver Detalhes</a>
+        </div>
+
+        <div class="card-curso">
+            <h2>Design Gráfico</h2>
+            <p><strong>Início:</strong> 01/10/2025</p>
+            <p><strong>Duração:</strong> 60 horas</p>
+            <p>R$ 450,00</p>
+            <a href="detalhes-curso-2.html" class="botao-detalhes">Ver Detalhes</a>
+        </div>
+        
+        <div class="card-curso">
+            <h2>Marketing Digital</h2>
+            <p><strong>Início:</strong> 20/09/2025</p>
+            <p><strong>Duração:</strong> 45 horas</p>
+            <p>R$ 380,00</p>
+            <a href="detalhes-curso-3.html" class="botao-detalhes">Ver Detalhes</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
