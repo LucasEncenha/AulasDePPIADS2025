@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -62,4 +66,29 @@ header {
 
 #comprar-button:hover {
     background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .detalhes {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .informacoes, .vagas {
+        margin-bottom: 20px;
+    }
+    
+    .vagas input {
+        width: 80px;
+    }
 }
