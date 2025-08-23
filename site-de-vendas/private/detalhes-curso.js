@@ -2,8 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const quantidade = document.getElementById('quantidade-vagas');
     const valorTotal = document.getElementById('valor-total');
     const vagasDisponiveis = document.getElementById('vagas-disponiveis');
-    
-    const precoPorVaga = 500.00;
+
+    const stringValor = valorTotal.textContent;
+
+    const preco = parseFloat(stringValor.replace('R$', '').replace(',', '.'));
+
     const vagas = parseInt(vagasDisponiveis.textContent);
 
     function calcularValorTotal() {
@@ -14,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quantidade.value = vagas;
         }
 
-        const valor = quant * precoPorVaga;
+        const valor = quant * preco;
         valorTotal.textContent = `R$ ${valor.toFixed(2).replace('.', ',')}`;
     }
 
